@@ -105,11 +105,11 @@ public class FXMLController {
 
     	long time_end=System.currentTimeMillis();
     	
-    	long time_in_second=(time_end-time_start)*((long)0.001);
+    	long time_in_second=(time_end-time_start);
     	
     	txtAreaDown.setText(textDown);
     	lblErrors.setText("The text contains " +nErrori+" errors");
-    	lblTime.setText("Spell check completed in "+time_in_second+"seconds");
+    	lblTime.setText("Spell check completed in "+time_in_second+" milliseconds");
     	
     	
     	
