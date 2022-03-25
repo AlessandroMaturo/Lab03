@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -12,6 +13,7 @@ public class Dictionary {
 	List<String> dictionary = new LinkedList<String>();
 	
 	public void loadDictionary(String language) {
+		
 		
 		try {
 			FileReader fr = new FileReader(language);
@@ -32,6 +34,8 @@ public class Dictionary {
 		
 	}
 	
+	
+	
 	public List<RichWord> spellCheckText(List<String> inputTextList){
 		
 		List<RichWord> richWords = new LinkedList<RichWord>();
@@ -49,5 +53,6 @@ public class Dictionary {
 		
 		return richWords;
 	}
+    
 
 }
